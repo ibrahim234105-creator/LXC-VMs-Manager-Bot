@@ -1,10 +1,10 @@
 # LXC-Bot-V6
 
-- ⚡ Easy & Fast LXC Container Management
-- ✨ Quick Creations & Responses
-- 🔐 Secure Containers Creation
-- ✅ Made for Hosting Owners
-- 🟢 100% Free & Open-Source
+- **⚡ Easy & Fast LXC Container Management**
+- ✨ **Quick Creations & Responses**
+- 🔐 **Secure Containers Creation**
+- ✅ **Made for Hosting Owners**
+- 🟢 **100% Free & Open-Source**
 
 # Installation Guide
 
@@ -40,15 +40,12 @@ After=network.target
 User=root
 WorkingDirectory=/root
 
-# Environment Variables
 Environment="PYTHONUNBUFFERED=1"
 Environment="DISCORD_TOKEN=YOUR_DISCORD_BOT_TOKEN"
 Environment="MAIN_ADMIN_ID=YOUR_ADMIN_ID"
 
-# Start Bot
 ExecStart=/usr/bin/python3 /root/bot.py
 
-# Auto-Restart
 Restart=always
 RestartSec=5
 
