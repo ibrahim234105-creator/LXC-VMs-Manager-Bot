@@ -12,7 +12,7 @@ LXC Bot V6 is a professional-grade Discord orchestration bot designed to manage 
 ## 🛠️ Deployment Framework
 
 ### 1. Host Environment Prep
-# Install and initialize the LXD virtualization daemon
-``sudo apt update && sudo apt install snapd -y``
-``sudo snap install lxd``
-``sudo lxd init --auto``
+### Install and initialize the LXD virtualization daemon
+Run: ``sudo apt update && sudo apt install snapd -y``
+Run: ``sudo snap install lxd``
+Run: ``sudo lxd init --auto``
