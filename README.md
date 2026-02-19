@@ -1,4 +1,4 @@
-# LXC-Bot-V6
+# 🚀 LXC-Bot-V6
 
 - **⚡ Easy & Fast LXC Container Management**
 - ✨ **Quick Creations & Responses**
@@ -10,28 +10,33 @@
 
 1) bash <(curl -fsSL https://raw.githubusercontent.com/hopingboyz/lxc-installer/main/lxc-installer.sh)
 
-2) sudo apt install snapd -y
+**⚠️ IF YOU GET ERROR WHILE USING THE SCRIPT, TRY THE CODE BELOW!**
+**——————————————————————————————————————————————————————————————————————**
 
-3) sudo systemctl enable --now snapd.socket
+sudo apt install snapd -y
 
-4) sudo ln -s /var/lib/snapd/snap /snap
+sudo systemctl enable --now snapd.socket
 
-5) sudo snap install lxd
+sudo ln -s /var/lib/snapd/snap /snap
 
-6) sudo usermod -aG lxd $USER
+sudo snap install lxd
+
+**——————————————————————————————————————————————————————————————————————**
+
+sudo usermod -aG lxd $USER
 newgrp lxd
 
-7) reboot
+reboot
 
-8) sudo lxd init
+sudo lxd init
 
-9) apt install python3-pip -y
+apt install python3-pip -y
 
-10) mkdir -p ~/.config/pip && echo -e "[global]\nbreak-system-packages = true" > ~/.config/pip/pip.conf
+mkdir -p ~/.config/pip && echo -e "[global]\nbreak-system-packages = true" > ~/.config/pip/pip.conf
 
-11) sudo nano /etc/systemd/system/fusionodes.service
+sudo nano /etc/systemd/system/fusionodes.service
 
-12) Paste it
+Paste it:
 [Unit]
 Description=FusionNodes Discord Bot
 After=network.target
@@ -52,7 +57,10 @@ RestartSec=5
 [Install]
 WantedBy=multi-user.target
 
-13) sudo systemctl daemon-reload
+
+
+sudo systemctl daemon-reload
+
 sudo systemctl restart fusionodes
 
 14) Add bot.py file.
@@ -63,4 +71,4 @@ sudo systemctl restart fusionodes
 
 17) python3 bot.py
 
-# Made by FeatherPlayz & HopingBoyz
+# FeatherPlayz All Right Reserved
