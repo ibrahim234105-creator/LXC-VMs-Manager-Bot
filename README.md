@@ -19,4 +19,29 @@ LXC Bot V6 is a professional-grade Discord orchestration bot designed to manage 
 
 ``sudo lxd init``
 
+### 2. Service Orchestration
+### To ensure LXC Bot V6 remains online 24/7, we use a dedicated systemd service:
+
+``[Unit]
+Description=FusionNodes Discord Infrastructure Engine
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/usr/bin/python3 /root/bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target``
+
+### 🔐 Security & Governance
+**Privileged Nesting: Securely handles nested containerization for complex workloads.
+Role-Based Access: Integrated Discord permission mapping for admin-only infrastructure commands.
+Auto-Cleanup: Automated daemon-trap protocols to prevent resource leaks.
+
+© FeatherPlayz | Powered by FeatherPlayz**
+
+
 
